@@ -1,0 +1,16 @@
+.box{
+    border: 15px solid green;
+    margin: 20px;
+    width: 30vw;
+    height: 30vh;
+
+}
+.box p{
+    margin-top: 20%;
+    margin-left: 20%;
+}
+.s{
+    display: flex;
+    width: 50vw;
+    justify-content: space-between;
+}
