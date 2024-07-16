@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Order Form</title>
+    <link rel="stylesheet" href="D:\programming\face pep\html_11-07\re.css">
+</head>
+<body>
+    <h2 class="h2">Welcome to the Online Shopping</h2>
+    <div class="a1">
+    <form id="customerForm" action="" onsubmit="return false">
+        <table border="1" class="tb">
+            <tr>
+                <td><label for="name">Customer Name:</label></td>
+                <td><input type="text" id="name" name="customer_name" required></td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile Number:</label></td>
+                <td><input type="text" id="mobile" name="mobile_number" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Billing Address:</label></td>
+                <td><textarea id="address" name="billing_address" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="product">Choose Product:</label></td>
+                <td>
+                    <select id="product" name="product" required>
+                        <option value="tv1">TV 1</option>
+                        <option value="fridge">Fridge</option>
+                        <option value="washing_machine">Washing Machine</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="quantity">Enter Quantity:</label></td>
+                <td><input type="number" id="quantity" name="quantity" required></td>
+            </tr>
+            <tr>
+                <td><label for="payment">Payment Mode:</label></td>
+                <td>
+                    <select id="payment" name="payment_mode" required>
+                        <option value="credit_card">Credit Card</option>
+                        <option value="debit_card">Debit Card</option>
+                        <option value="paypal">PayPal</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="bag_total">Bag Total:</label></td>
+                <td><input type="number" id="bag_total" name="bag_total" required></td>
+            </tr>
+            <tr>
+                <td><label for="coupon">Coupon Code:</label></td>
+                <td><input type="text" id="coupon" name="coupon_code"></td>
+            </tr>
+            <tr>
+                <td>Delivery Option:</td>
+                <td>
+                    <input type="checkbox" id="express" name="delivery_option" value="express">
+                    <label for="express">Express</label><br>
+                    <input type="checkbox" id="standard" name="delivery_option" value="standard">
+                    <label for="standard">Standard</label>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="terms" name="terms" required></td>
+                <td><label for="terms">I agree to the terms and conditions</label></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="reset">Clear</button>
+                    <button type="submit" onclick="ela()">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<div>
+    <p id="q">Customer Name: </p>
+    <p id="w">Email: </p>
+    <p id="r">Bag Total: </p>
+</div>
+<script src="ela.js"></script>
+<!-- <script>
+        function ela(){
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var bag_total = document.getElementById('bag_total').value;
+        document.getElementById('q').innerText = 'Customer Name: ' + name;
+        document.getElementById('w').innerText = 'Email: ' + email;
+        document.getElementById('r').innerText = 'Bag Total: ' + bag_total;
+        }
+</script> -->
+</body>
+</html>
